@@ -1,0 +1,208 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #fff;
+  --normal-font-weight: 400;
+  --normal-font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #7575BB;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-container {
+  width: 30%;
+  background-color: black;
+  height: auto;
+  background-image: url("/images/h-heyerlein-riYdn15o96U-unsplash 1.png");
+  background-size: 100% 90%;
+  border-radius: 2rem 2rem 2rem;
+  display: grid;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+}
+
+.signal i {
+  color: red;
+  font-size: 1em;
+}
+
+.music-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1em 1em;
+}
+.music-header p {
+  color: var(--primary-color);
+}
+.music-header .signal {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.music-status {
+  display: grid;
+  row-gap: 1rem;
+}
+.music-status h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.music-status h1::after {
+  content: ". . .";
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  float: right;
+  padding-right: 1em;
+  font-weight: bolder;
+}
+
+.music-player-icon {
+  padding: 2em 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.music-player-icon .music-icon {
+  margin-top: 3em;
+  width: 70%;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 80px 80px 80px 80px;
+  border: 1px solid white;
+}
+.music-player-icon img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.music-title {
+  margin-top: 1em;
+  text-align: center;
+  color: var(--primary-color);
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.music-title h1 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  min-height: 150px;
+}
+.music-title p {
+  color: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.music-player-button {
+  background: linear-gradient(180deg, #000000 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  row-gap: 1rem;
+}
+.music-player-button .music-player-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.music-player-button .music-player-buttons .previous {
+  border: none;
+}
+.music-player-button .music-player-buttons .previous i {
+  padding: 0.5em;
+  font-size: 2rem;
+  color: red;
+}
+.music-player-button .music-player-buttons .previous button {
+  background: none;
+  border: none;
+}
+.music-player-button .music-player-buttons .next i {
+  padding: 0.5em;
+  font-size: 2rem;
+  color: red;
+}
+.music-player-button .music-player-buttons .next button {
+  background: none;
+  border: none;
+}
+.music-player-button .music-player-buttons .pause-play i {
+  padding: 0.5em;
+  font-size: 2rem;
+  color: red;
+}
+.music-player-button .music-player-buttons .pause-play button {
+  background: none;
+  border: none;
+}
+.music-player-button .music-player-buttons .play-pause i {
+  padding: 0.5em;
+  font-size: 2rem;
+  color: red;
+}
+.music-player-button .music-player-buttons .play-pause button {
+  background: none;
+  border: none;
+}
+.music-player-button .song-time {
+  display: flex;
+  justify-content: space-around;
+}
+.music-player-button .time-songs-start p {
+  color: var(--primary-color);
+}
+.music-player-button .time-songs-end p {
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .music-container {
+    width: 60%;
+  }
+  .music-player-buttons .next i {
+    font-size: 1.5rem !important;
+  }
+  .music-player-buttons .previous i {
+    font-size: 1.5rem !important;
+  }
+  .music-player-buttons .pause-play i {
+    font-size: 1.5rem !important;
+  }
+  .music-player-buttons .play-pause i {
+    font-size: 1.5rem !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .music-container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=index.css.map */

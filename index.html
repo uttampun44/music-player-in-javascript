@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+     
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- fontfamily -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/index.css">
+    <script type="text/javascript" defer src="/index.js"></script>
+</head>
+<body>
+
+   <main>
+        <audio src="./music/The Chainsmokers Who Do You Love Ft. 5 Seconds Of Summer - The Chainsmokers.mp3" id="audio"></audio>
+             <div class="music-container">
+                <div class="music-header">
+                    <div class="time">
+                          <p id="hours">12:15</p>
+                    </div>
+                      <div class="signal">
+                           <img src="./images/signal 1.png">
+                           <i class="fa fa-battery-full"></i>
+                    </div>
+                 </div>
+                
+                    <div class="music-status">
+                      <h1 id="now-playing">Now Playing</h1>
+                    </div>
+
+                  <div class="music-player-icon">
+                     <div class="music-icon">
+                             <img src="./images/h-heyerlein-riYdn15o96U-unsplash 1.png">
+                      </div>
+             </div>
+
+             <div class="music-player-button">
+              <div class="music-title">
+                 <h1 id="song-title">Soul and Mind</h1>
+                 <p id="song-artist">5 Seconds of summer</p>
+                 </div>
+
+                <div class="song-time">
+                  <div class="time-songs-start">
+                    <p id="first-time"></p>
+                 </div>
+  
+                 <div class="time-songs-end">
+                   <p id="last-time"></p>
+                </div>
+                </div>
+                 <div class="music-player-buttons">
+
+                  <div class="previous">
+                    <button id="previous"><i class="fa fa-caret-left"></i></button>
+                   </div>
+               
+                   <div class="pause-play">
+                      <button id="pause-play"><i class="fa fa-play"></i></button>
+                   </div>
+                   <div class="play-pause">
+                     <button id="play-pause"><i class="fa fa-pause"></i></button>
+                  </div>
+                    <div class="next">
+                       <button id="next"><i class="fa fa-caret-right"></i></button>
+                     </div>
+                 </div>
+             </div>
+   </main>
+</body>
+</html>
